@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort a string in alphabetical order</title>
+</head>
+<body>
+	<h2>Enter a string</h2>
+	<input type="text" id="r"/><br><br>
+	<input type = "button" onclick = "Sort()" value = "result"/><br><br>
+	<div id="res"></div>
+	<script>
+		
+		function Sort()
+		{
+			var S=document.getElementById("r").value;
+			var str;
+			var arr = S.split('');
+			var sorted = arr.sort();
+			document.getElementById("res").innerHTML=sorted.join('');
+		}
+	</script>
+	<noscript>
+		you need to activate js.
+	</noscript>
+</body>
+</html>
+
